@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amiko", sans-serif;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-wrap {
+  flex: 1;
+}
+html,
+body {
+  margin: 0;
+}
+body {
+  background: url(./assets/main-pic.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-attachment: fixed;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
