@@ -120,8 +120,8 @@ export default function Projects() {
               <ProjectDesc>
                 This is a react js landing page for a mock resort. I used a map
                 api to show the locations and some basic details for each
-                branch. The part I had most trouble was that the width of the
-                map could only be set in jsx.
+                branch. The challenging part was that the width of the map could
+                only be set in jsx.
               </ProjectDesc>
 
               <TechStack>
