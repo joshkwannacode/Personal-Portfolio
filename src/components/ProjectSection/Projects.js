@@ -66,11 +66,11 @@ export default function Projects() {
             <ProjectDescDiv>
               <ProjectTitle>GrammarBot</ProjectTitle>
               <ProjectDesc>
-                This website takes in text and checks for grammar errors, then
-                it returns all the errors and possible solutions. The difficult
-                part of making this website was that the documentation on the
-                api was limited. Due to this I realized the importance of the
-                console log.
+                This website takes in text and checks for grammar errors, and
+                then it returns all the errors and possible solutions. The
+                challenging part of making this website was that the
+                documentation on the api was limited. Due to this I realized the
+                importance of the console log.
               </ProjectDesc>
 
               <TechStack>
@@ -85,7 +85,7 @@ export default function Projects() {
           </FirstProject>
           <ProjectButton>
             <a
-              href="https://github.com/joshkwannacode/GrammarFix-react"
+              href="https://github.com/joshkwannacode/grammar-josh"
               target="_blank"
               alt="code"
             >
@@ -120,8 +120,8 @@ export default function Projects() {
               <ProjectDesc>
                 This is a react js landing page for a mock resort. I used a map
                 api to show the locations and some basic details for each
-                branch. The part I had most trouble was using the react-router
-                because I had no prior knowledge about it.
+                branch. The part I had most trouble was that the width of the
+                map could only be set in jsx.
               </ProjectDesc>
 
               <TechStack>
@@ -135,7 +135,7 @@ export default function Projects() {
           </SecondProject>
           <ProjectButton>
             <a
-              href="https://github.com/joshkwannacode/Bali-Resort-Page"
+              href="https://github.com/joshkwannacode/Bali-Resort"
               target="_blank"
               alt="code"
             >
