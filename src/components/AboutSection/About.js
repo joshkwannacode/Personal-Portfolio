@@ -27,8 +27,8 @@ export default function About() {
             &nbsp;&nbsp;&nbsp;&nbsp;Hi I am Joshua Kang, a front-end developer
             based in Seattle,Washington. I started learning web development when
             I accidently opened dev-tools in Chrome and never looked back since.
-            My hobbies are playing basketball, cycling, travelling, researching
-            about new technologies, and spending time with my dog.
+            In my free time I am playing in a local basketball team, attending
+            boxing/MMA classes , and spending time with my dog.
           </AboutText>
         </Text>
 
