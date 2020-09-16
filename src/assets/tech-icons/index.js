@@ -16,3 +16,4 @@ export { default as css } from "./css3.svg";
 export { default as figma } from "./figma.svg";
 export { default as wordpress } from "./wordpress.svg";
 export { default as html2 } from "./html-5.svg";
+export { default as bootstrap } from "./bootstrap-4.svg";

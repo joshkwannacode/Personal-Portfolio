@@ -16,7 +16,7 @@ import {
   IconName,
 } from "../Styled.js";
 import skillsData from "./skillsData";
-
+import resumeFile from "../../assets/Joshua-Kang-resume.pdf";
 export default function Skills() {
   return (
     <MainStyle
@@ -57,9 +57,9 @@ export default function Skills() {
           <Link to="/About">
             <NavButtons>ABOUT</NavButtons>
           </Link>
-          <Link to="/Resume">
+          <a href={resumeFile} download="Joshua-Kang-Resume">
             <NavButtons>RESUME</NavButtons>
-          </Link>
+          </a>
         </NavBorder>
       </Border>
     </MainStyle>

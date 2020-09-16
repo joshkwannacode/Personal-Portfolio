@@ -1,5 +1,4 @@
 import {
-  babel,
   figma,
   git,
   html,
@@ -12,6 +11,7 @@ import {
   webpack,
   python,
   wordpress,
+  bootstrap,
 } from "../../assets/tech-icons";
 
 const skillsData = [
@@ -30,14 +30,14 @@ const skillsData = [
       { name: "react", icon: react },
       { name: "styled", icon: styled },
       { name: "material ui", icon: material },
-      { name: "wordpress", icon: wordpress },
+      { name: "bootstrap", icon: bootstrap },
     ],
   },
   {
     title: "Tools that I use",
     skills: [
       { name: "git", icon: git },
-      { name: "babel", icon: babel },
+      { name: "wordpress", icon: wordpress },
       { name: "figma", icon: figma },
       { name: "npm & yarn", icon: npm },
       { name: "webpack", icon: webpack },

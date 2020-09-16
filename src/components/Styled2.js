@@ -187,6 +187,9 @@ export const ProjectTitle = styled.h3`
   @media (max-width: 480px) {
     font-size: 1.5vw;
   }
+  @media (max-width: 380px) {
+    font-size: 2vw;
+  }
 `;
 export const ProjectDesc = styled.p`
   font-size: 10px;
@@ -199,22 +202,23 @@ export const ProjectDesc = styled.p`
     font-size: 0.8vw;
   }
   @media (max-width: 768px) {
-    font-size: 0.8vw;
+    font-size: 1vw;
   }
   @media (max-width: 480px) {
     min-width: 35vw;
     height: 5vh;
     margin-bottom: 5vh;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
   }
-  @media (max-width: 375px) {
-    font-size: 2vw;
+  @media (max-width: 380px) {
+    font-size: 2.5w;
   }
   @media (max-width: 320px) {
-    font-size: 2vw;
+    font-size: 2.3vw;
     height: 10vh;
     overflow-x: auto;
     width: 23vw;
+    cursor: pointer;
   }
 `;
 export const ProjectButton = styled.div`
@@ -288,17 +292,23 @@ export const TechStack = styled.div`
     font-size: 1vw;
   }
   @media (max-width: 768px) {
-    margin-top: -3vh;
+    margin-top: -2vh;
+    width: 15vw;
+    font-size: 1.3vw;
   }
   @media (max-width: 480px) {
-    margin-top: 2.8vh;
-    font-size: 3vw;
+    margin-top: 3vh;
+    font-size: 2.5vw;
   }
   @media (max-width: 380px) {
-    margin-top: -2vh;
+    margin-top: 1vh;
+    font-size: 1.8vw;
   }
   @media (max-width: 320px) {
-    margin-top: -5vh;
+    margin-top: -5.5vh;
+    width: 40vw;
+    flex-wrap: wrap;
+    font-size: 2vw;
   }
 `;
 export const TechStackIcon = styled.img`
@@ -306,15 +316,19 @@ export const TechStackIcon = styled.img`
   width: 1.5vw;
   margin-right: 0.5vw;
   margin-left: 0.5vw;
+  @media (max-width: 768px) {
+    width: 1.5vw;
+    margin-top: -0.8vh;
+  }
   @media (max-width: 480px) {
     height: 5vh;
     width: 3vw;
     margin-top: -1vh;
   }
-  @media (max-width: 320px) {
-    height: 6vh;
-    width: 3vw;
-    margin-top: -2vh;
+  @media (max-width: 380px) {
+    height: 4vh;
+    width: 4vw;
+    margin-top: -1.5vh;
   }
 `;
 export const MoreProjectButton = styled.button`
@@ -381,7 +395,7 @@ export const SkillsItemDiv = styled.div`
   text-align: center;
 `;
 export const IconName = styled.span`
-  margin-right: 2.5vw;
+  margin-right: 2.2vw;
   font-size: 1vw;
   margin-top: 2vh;
   @media (max-width: 480px) {

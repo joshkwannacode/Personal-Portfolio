@@ -1,9 +1,8 @@
 import React from "react";
-import FrontPage from "./components/FrontPage";
+import FrontPage from "./components/FrontPageSection/FrontPage";
 import Projects from "./components/ProjectSection/Projects";
 import Skills from "./components/SkillsSection/Skills";
-import Resume from "./components/Resume";
-import About from "./components/About";
+import About from "./components/AboutSection/About";
 import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
@@ -17,7 +16,6 @@ function App() {
               <Route exact path="/Projects" component={Projects} />
               <Route exact path="/Skills" component={Skills} />
               <Route exact path="/About" component={About} />
-              <Route exact path="/Resume" component={Resume} />
             </Switch>
           </AnimatePresence>
         </Router>

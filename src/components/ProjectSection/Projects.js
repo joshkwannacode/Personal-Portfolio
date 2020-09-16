@@ -25,7 +25,7 @@ import project1 from "../../assets/project-images/grammar-bot.png";
 import project2 from "../../assets/project-images/bali-project.png";
 import project1Gif from "../../assets/project-images/grammar-bot.gif";
 import project2Gif from "../../assets/project-images/bali-resort.gif";
-
+import resumeFile from "../../assets/Joshua-Kang-resume.pdf";
 import {
   html2,
   javascript,
@@ -170,9 +170,9 @@ export default function Projects() {
           <Link to="/About">
             <NavButtons>ABOUT</NavButtons>
           </Link>
-          <Link to="/Resume">
+          <a href={resumeFile} download="Joshua-Kang-Resume">
             <NavButtons>RESUME</NavButtons>
-          </Link>
+          </a>
         </NavBorder>
       </Border>
     </MainStyle>
