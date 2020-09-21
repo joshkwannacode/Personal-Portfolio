@@ -16,7 +16,10 @@ export default function FrontPage() {
     document.body.className += " loaded";
   };
   useEffect(() => {
-    setTimeout(() => setLoading(true), 2000);
+    window.onload = (event) => {
+      setTimeout(() => setLoading(true), 1000);
+    };
+    // ;
   }, []);
 
   return (
