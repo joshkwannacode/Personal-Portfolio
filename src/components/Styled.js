@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 
 //Key frames
 const reveal = keyframes`
-    80%{
-      letter-spacing: 8px;
-    }
     100% {
       background-size: 300% 300%;
     }
@@ -33,8 +30,7 @@ export const FrontPageStyle = styled.div`
   background-clip: text;
   color: transparent;
 
-  animation: ${reveal} 3000ms ease-in-out forwards 200ms,
-    ${glow} 2500ms linear 2 2000ms;
+  animation: ${reveal} 1000ms ease-in-out forwards 200ms;
 
   @media (max-width: 480px) {
     width: 80%;
