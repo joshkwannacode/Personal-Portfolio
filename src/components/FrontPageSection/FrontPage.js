@@ -8,50 +8,45 @@ import {
   FrontPageP,
   NavBorder,
 } from "../Styled";
-import LoadingScreen from "../LoadingScreen/LoadingScreen";
 import resumeFile from "../../assets/Joshua-Kang-resume.pdf";
 export default function FrontPage() {
   const [loading, setLoading] = useState(false);
-  window.onload = function () {
-    document.body.className += " loaded";
-  };
+
   useEffect(() => {
+    loadOnce();
+  }, []);
+
+  const loadOnce = () => {
     window.onload = (event) => {
       setTimeout(() => setLoading(true), 1000);
     };
-    // ;
-  }, []);
-
+  };
   return (
     <>
-      {loading === false ? (
-        <LoadingScreen />
-      ) : (
-        <FrontPageStyle>
-          <header>
-            <FrontPageTitle>
-              <FrontPageH1>Joshua Kang</FrontPageH1>
-              <FrontPageP>Front-end Developer</FrontPageP>
-            </FrontPageTitle>
+      <FrontPageStyle>
+        <header>
+          <FrontPageTitle>
+            <FrontPageH1>Joshua Kang</FrontPageH1>
+            <FrontPageP>Front-end Developer</FrontPageP>
+          </FrontPageTitle>
 
-            <NavBorder>
-              <Link to="/Projects">
-                <FrontPageNav>PROJECTS</FrontPageNav>
-              </Link>
+          <NavBorder>
+            <Link to="/Projects">
+              <FrontPageNav>PROJECTS</FrontPageNav>
+            </Link>
 
-              <Link to="/Skills">
-                <FrontPageNav>SKILLS</FrontPageNav>
-              </Link>
-              <Link to="/About">
-                <FrontPageNav>ABOUT</FrontPageNav>
-              </Link>
-              <a href={resumeFile} download="Joshua-Kang-Resume">
-                <FrontPageNav>RESUME</FrontPageNav>
-              </a>
-            </NavBorder>
-          </header>
-        </FrontPageStyle>
-      )}
+            <Link to="/Skills">
+              <FrontPageNav>SKILLS</FrontPageNav>
+            </Link>
+            <Link to="/About">
+              <FrontPageNav>ABOUT</FrontPageNav>
+            </Link>
+            <a href={resumeFile} download="Joshua-Kang-Resume">
+              <FrontPageNav>RESUME</FrontPageNav>
+            </a>
+          </NavBorder>
+        </header>
+      </FrontPageStyle>
     </>
   );
 }
