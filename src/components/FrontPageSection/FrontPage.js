@@ -10,17 +10,6 @@ import {
 } from "../Styled";
 import resumeFile from "../../assets/Joshua-Kang-resume.pdf";
 export default function FrontPage() {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    loadOnce();
-  }, []);
-
-  const loadOnce = () => {
-    window.onload = (event) => {
-      setTimeout(() => setLoading(true), 1000);
-    };
-  };
   return (
     <>
       <FrontPageStyle>
