@@ -21,6 +21,8 @@ import {
   MoreProjectButton,
   ProjectGif,
 } from "../Styled.js";
+import SkyscannerGif from "../../assets/project-images/skyscanner.gif";
+import Skyscanner from "../../assets/project-images/skyscanner.png";
 import project1 from "../../assets/project-images/grammar-bot.png";
 import project2 from "../../assets/project-images/bali-project.png";
 import project1Gif from "../../assets/project-images/grammar-bot.gif";
@@ -32,11 +34,14 @@ import {
   material,
   react,
   css,
+  nodeJS,
+  mongodb
 } from "../../assets/tech-icons";
 
 export default function Projects() {
   const [isShown, setIsShown] = useState(true);
   const [isShown2, setIsShown2] = useState(true);
+  const [isShown3, setIsShown3] = useState(true);
   return (
     <MainStyle
       initial={{ opacity: 0 }}
@@ -46,7 +51,60 @@ export default function Projects() {
       <Border>
         <PageTitles>PROJECTS</PageTitles>
         <Text>
-          <FirstProject>
+          
+        <FirstProject>
+            {isShown3 === true ? (
+              <ProjectImg
+                onMouseEnter={() => setIsShown3(false)}
+                src={Skyscanner}
+                alt="skyscanner img"
+              />
+            ) : null}
+
+            {isShown3 === false ? (
+              <ProjectGif
+                onMouseLeave={() => setIsShown3(true)}
+                src={SkyscannerGif}
+                alt="skyscanner gif"
+              />
+            ) : null}
+
+            <ProjectDescDiv>
+              <ProjectTitle>OneWay Flight Info</ProjectTitle>
+              <ProjectDesc>
+              A full-stack CRUD app that searches and saves flight information from the Skyscanner api. 
+              Incorporates a self-made REST api, the Skyscanner api, and an authentication system. 
+              Created with React js, Node.js, MongoDB, Express api, React-router, HTML5, CSS3, and Javascript.
+
+              </ProjectDesc>
+
+              <TechStack>
+                <h4>TechStack:</h4>
+                <TechStackIcon src={react} alt="react" />
+                <TechStackIcon src={nodeJS} alt="node-js" />
+                <TechStackIcon src={mongodb} alt="mongodb" />
+                <TechStackIcon src={javascript} alt="javascript" />
+              </TechStack>
+            </ProjectDescDiv>
+          </FirstProject>
+          <ProjectButton>
+            <a
+              href="https://github.com/joshkwannacode/OneWay-Flights"
+              target="_blank"
+              alt="code"
+            >
+              <CodeBtn>Code</CodeBtn>
+            </a>
+            <a
+              href="https://one-way-flights.herokuapp.com/"
+              target="_blank"
+              alt="live Project"
+            >
+              <LiveCodeBtn>Live</LiveCodeBtn>
+            </a>
+          </ProjectButton>
+
+          <SecondProject>
             {isShown === true ? (
               <ProjectImg
                 onMouseEnter={() => setIsShown(false)}
@@ -66,11 +124,9 @@ export default function Projects() {
             <ProjectDescDiv>
               <ProjectTitle>GrammarBot</ProjectTitle>
               <ProjectDesc>
-                This website takes in text and checks for grammar errors, and
-                then it returns all the errors and possible solutions. The
-                challenging part of making this website was that the
-                documentation on the api was limited. Due to this I realized the
-                importance of the console log.
+              A React js website that takes in text, checks for grammar 
+              errors then using the Grammar Bot api returns all possible solutions and errors made. 
+              Created with React js, Grammar Bot api, React-router, HTML5, CSS3, Javascript, and Material-ui.
               </ProjectDesc>
 
               <TechStack>
@@ -82,7 +138,7 @@ export default function Projects() {
                 <TechStackIcon src={material} alt="material-ui" />
               </TechStack>
             </ProjectDescDiv>
-          </FirstProject>
+          </SecondProject>
           <ProjectButton>
             <a
               href="https://github.com/joshkwannacode/grammar-josh"
@@ -149,6 +205,7 @@ export default function Projects() {
               <LiveCodeBtn>Live</LiveCodeBtn>
             </a>
           </ProjectButton>
+
           <a
             style={{ textDecoration: "none" }}
             href="https://github.com/joshkwannacode"

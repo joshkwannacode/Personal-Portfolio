@@ -12,22 +12,26 @@ import {
   python,
   wordpress,
   bootstrap,
+  nodeJS,
+  mongodb
 } from "../../assets/tech-icons";
 
 const skillsData = [
   {
     title: "Languages",
     skills: [
-      { name: "html5", icon: html },
-      { name: "css3/scss", icon: sass },
+      { name: "nodeJS", icon: nodeJS },
       { name: "javascript", icon: javascript },
       { name: "python", icon: python },
+      { name: "html5", icon: html },
+      { name: "css3/scss", icon: sass },
     ],
   },
   {
     title: "Frameworks",
     skills: [
       { name: "react", icon: react },
+      { name: "mongoDB", icon: mongodb },
       { name: "styled", icon: styled },
       { name: "material ui", icon: material },
       { name: "bootstrap", icon: bootstrap },

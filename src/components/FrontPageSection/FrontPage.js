@@ -16,7 +16,7 @@ export default function FrontPage() {
         <header>
           <FrontPageTitle>
             <FrontPageH1>Joshua Kang</FrontPageH1>
-            <FrontPageP>Front-end Developer</FrontPageP>
+            <FrontPageP>Software Engineer</FrontPageP>
           </FrontPageTitle>
 
           <NavBorder>

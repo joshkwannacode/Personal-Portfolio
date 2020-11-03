@@ -17,3 +17,5 @@ export { default as figma } from "./figma.svg";
 export { default as wordpress } from "./wordpress.svg";
 export { default as html2 } from "./html-5.svg";
 export { default as bootstrap } from "./bootstrap-4.svg";
+export { default as mongodb } from "./mongodb.svg";
+export { default as nodeJS } from "./node-js.svg";

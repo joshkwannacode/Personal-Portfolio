@@ -104,7 +104,7 @@ export const PageTitles = styled.h2`
 
 //For areas with Text
 export const Text = styled.div`
-  height: 80vh;
+  /* height: 80vh; */
   width: 50vw;
   margin-top: 5vh;
 `;
@@ -346,6 +346,7 @@ export const MoreProjectButton = styled.button`
   color: white;
   opacity: 1;
   margin-top: -1vh;
+  margin-bottom:4vh;
   margin-left: 20vw;
   &:hover {
     opacity: 0.5;
@@ -364,7 +365,8 @@ export const MoreProjectButton = styled.button`
   }
 `;
 //Skills Page details
-export const SkillsPage = styled.div``;
+export const SkillsPage = styled.div`
+margin-bottom:4vh;`;
 export const SkillsDetail = styled.div`
   margin-left: 2vw;
 `;
