@@ -26,7 +26,7 @@ export default function About() {
           <AboutText>
             &nbsp;&nbsp;&nbsp;&nbsp;Hi I am Joshua Kang, a software engineer
             based in Seattle,Washington. Who is passionate about technology and web development.
-            In my free time I am competing at a local basketball team, and spending time with my dog.
+            I spend my free time competing at a local basketball team, and practicing MMA.
           </AboutText>
         </Text>
 
