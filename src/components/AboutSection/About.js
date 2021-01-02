@@ -25,8 +25,8 @@ export default function About() {
           <SeattlePic src={seattlePic} alt="pic of seattle" />
           <AboutText>
             &nbsp;&nbsp;&nbsp;&nbsp;Hi I am Joshua Kang, a software engineer
-            based in Seattle,Washington. Who is passionate about technology and web development.
-            I spend my free time competing at a local basketball team, and practicing MMA.
+            who is passionate about technology and web development. I am currently based in Seattle,WA
+            and during my free time I compete at a local basketball team, or practice MMA.
           </AboutText>
         </Text>
 
