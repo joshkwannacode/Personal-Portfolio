@@ -13,7 +13,7 @@ function App() {
     window.onload = (event) => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 1500);
+      }, 1000);
     };
   }, []);
   return (
