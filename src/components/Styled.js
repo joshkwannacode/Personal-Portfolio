@@ -92,6 +92,7 @@ export const Border = styled.div`
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 5px;
   z-index: 2;
+  
   @media (max-width: 480px) {
     width: 80vw;
   }
@@ -126,116 +127,135 @@ export const NavButtons = styled.button`
 //Project Page details
 export const FirstProject = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+  @media (max-width: 475px) {
+  margin-left:30vw;
+  }
+  
 `;
 export const SecondProject = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+  @media (max-width: 475px) {
+  margin-left:30vw;
+  }
 
   @media (max-width: 480px) {
     margin-top: 5vh;
   }
+  
 `;
 export const ProjectImg = styled.img`
-  margin-left: 1vw;
-  margin-right: 1vw;
-  width: 20vw;
-  height: 23vh;
+  justify-content:center;
+  align-items:center;
+  width: 35vw;
+  height: 38vh;
+  margin-right:1vw;
 
-  @media (min-width: 1440px) {
-    height: 25vh;
+  @media (min-width: 2560px) {
+    height: 41vh;
   }
   @media (max-width: 768px) {
-    width: 25vw;
-    height: 20vh;
+    height: 30vh;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     width: 40vw;
     height: 20vw;
+  }
+  @media (max-width: 320px) {
+    width: 50vw;
+    height: 30vw;
   }
 `;
 export const ProjectGif = styled.img`
-  margin-left: 1vw;
-  margin-right: 1vw;
-  width: 20vw;
-  height: 23vh;
-  @media (min-width: 1440px) {
-    height: 25vh;
+  width: 35vw;
+  height: 38vh;
+  margin-right:1vw;
+
+  @media (min-width: 2560px) {
+    height: 41vh;
   }
   @media (max-width: 768px) {
-    width: 25vw;
-    height: 20vh;
+    height: 30vh;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     width: 40vw;
     height: 20vw;
   }
+  @media (max-width: 320px) {
+    width: 50vw;
+    height: 30vw;
+  }
 `;
 export const ProjectDescDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 40vw;
+
+  
+  @media (max-width: 600px) {
+    font-size:2vw;
+    width:60vw;
+  }
+  /* @media (max-width: 320px) {
+    font-size:2vw;
+    width:50vw;
+  } */
 `;
+
 export const ProjectTitle = styled.h3`
   @media (max-width: 768px) {
     font-size: 1.2vw;
   }
-  @media (max-width: 480px) {
-    font-size: 1.5vw;
+  @media (max-width: 600px) {
+    font-size:3vw;
   }
-  @media (max-width: 380px) {
-    font-size: 2vw;
+
+  @media (max-width: 320px) {
+    font-size: 3vw;
   }
 `;
 export const ProjectDesc = styled.p`
   font-size: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   text-align: justify;
-  margin-right: 2vw;
+  width:35vw;
+
   @media (max-width: 2560px) {
     font-size: 0.8vw;
   }
   @media (max-width: 768px) {
     font-size: 1vw;
   }
-  @media (max-width: 480px) {
-    min-width: 35vw;
-    height: 5vh;
-    margin-bottom: 5vh;
-    font-size: 1.8vw;
+  @media (max-width:600px) {
+    font-size:1.6vw;
+    width:42vw;
+    margin-left:8vw;
   }
-  @media (max-width: 380px) {
-    font-size: 2.5w;
+  @media (max-width:470px) {
+    font-size:2vw;
+    width:55vw;
+    margin-left:2vw;
   }
-  @media (max-width: 320px) {
-    font-size: 2.3vw;
-    height: 10vh;
-    overflow-x: auto;
-    width: 23vw;
-    cursor: pointer;
-  }
+
+  
 `;
 export const ProjectButton = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   margin-top: 1vh;
-  margin-left: 4vw;
-  margin-bottom: 8vh;
+  margin-right: 1vw;
+  margin-bottom: 3vh;
   @media (max-width: 768px) {
-    margin-left: 7vw;
+    margin-top:0vw;
   }
-  @media (max-width: 480px) {
-    margin-left: 9vw;
-    margin-top: -5vh;
-  }
-  @media (max-width: 380px) {
-    margin-top: -4vh;
-  }
-  @media (max-width: 320px) {
-    margin-left: 6vw;
+  @media (max-width: 600px) {
+    margin-bottom:1vh;
+    margin-top:0vw;
+
   }
 `;
 
@@ -252,13 +272,16 @@ export const LiveCodeBtn = styled.button`
   &:hover {
     opacity: 0.5;
   }
-  @media (max-width: 480px) {
-    margin-bottom: 2vh;
-    width: 10vw;
+  @media(min-width:2560px){
+    width:3vw;
   }
-  @media (max-width: 320px) {
-    width: 12vw;
-    margin-left: 3vw;
+  @media (max-width: 768px) {
+    font-size:1vw;
+  }
+  @media (max-width: 600px) {
+    width: 5vw;
+    height:2vh;
+    font-size:1.7vw;
   }
 `;
 
@@ -275,12 +298,16 @@ export const CodeBtn = styled.button`
   &:hover {
     opacity: 0.5;
   }
-  @media (max-width: 480px) {
-    margin-bottom: 2vh;
-    width: 10vw;
+  @media(min-width:2560px){
+    width:3vw;
   }
-  @media (max-width: 320px) {
-    width: 12vw;
+  @media (max-width: 768px) {
+    font-size:1vw;
+  }
+  @media (max-width: 600px) {
+    width: 5vw;
+    height:2vh;
+    font-size:1.7vw;
   }
 `;
 export const TechStack = styled.div`
@@ -288,6 +315,7 @@ export const TechStack = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   margin-top: 2vh;
+  margin-bottom:6vh;
   @media (max-width: 2560px) and (min-width: 2000px) {
     font-size: 1vw;
   }
@@ -296,20 +324,15 @@ export const TechStack = styled.div`
     width: 15vw;
     font-size: 1.3vw;
   }
-  @media (max-width: 480px) {
-    margin-top: 6vh;
+  @media (max-width:600px) {
+    margin-left:8vw;
+  }
+  @media (max-width: 475px) {
+    margin-top: 2vh;
     font-size: 2.5vw;
+    margin-left:2vw;
   }
-  @media (max-width: 380px) {
-    margin-top: 4.5vh;
-    font-size: 1.8vw;
-  }
-  @media (max-width: 320px) {
-    margin-top: -2vh;
-    width: 40vw;
-    flex-wrap: wrap;
-    font-size: 2vw;
-  }
+
 `;
 export const TechStackIcon = styled.img`
   height: 3.5vh;
@@ -323,7 +346,7 @@ export const TechStackIcon = styled.img`
   @media (max-width: 480px) {
     height: 5vh;
     width: 3vw;
-    margin-top: -1vh;
+    margin-top: -1.5vh;
   }
   @media (max-width: 380px) {
     height: 4vh;
@@ -345,7 +368,7 @@ export const MoreProjectButton = styled.button`
   cursor: pointer;
   color: white;
   opacity: 1;
-  margin-top: -1vh;
+  margin-top: 3vh;
   margin-bottom:4vh;
   margin-left: 20vw;
   &:hover {
@@ -355,7 +378,7 @@ export const MoreProjectButton = styled.button`
     margin-top: 8vh;
   }
   @media (max-width: 480px) {
-    margin-left: 24vh;
+    margin-left: 22vh;
     width: 25vw;
     height: 5vh;
     font-size: 2vw;

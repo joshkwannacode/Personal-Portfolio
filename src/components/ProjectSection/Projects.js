@@ -68,7 +68,22 @@ export default function Projects() {
                 alt="skyscanner gif"
               />
             ) : null}
-
+            <ProjectButton>
+            <a
+              href="https://github.com/joshkwannacode/OneWay-Flights"
+              target="_blank"
+              alt="code"
+            >
+              <CodeBtn>Code</CodeBtn>
+            </a>
+            <a
+              href="https://one-way-flights.herokuapp.com/"
+              target="_blank"
+              alt="live Project"
+            >
+              <LiveCodeBtn>Live</LiveCodeBtn>
+            </a>
+          </ProjectButton>
             <ProjectDescDiv>
               <ProjectTitle>OneWay Flight Info</ProjectTitle>
               <ProjectDesc>
@@ -86,23 +101,9 @@ export default function Projects() {
                 <TechStackIcon src={javascript} alt="javascript" />
               </TechStack>
             </ProjectDescDiv>
+            
           </FirstProject>
-          <ProjectButton>
-            <a
-              href="https://github.com/joshkwannacode/OneWay-Flights"
-              target="_blank"
-              alt="code"
-            >
-              <CodeBtn>Code</CodeBtn>
-            </a>
-            <a
-              href="https://one-way-flights.herokuapp.com/"
-              target="_blank"
-              alt="live Project"
-            >
-              <LiveCodeBtn>Live</LiveCodeBtn>
-            </a>
-          </ProjectButton>
+          
 
           <SecondProject>
             {isShown === true ? (
@@ -120,6 +121,23 @@ export default function Projects() {
                 alt="project 1 gif"
               />
             ) : null}
+
+            <ProjectButton>
+            <a
+              href="https://github.com/joshkwannacode/grammar-josh"
+              target="_blank"
+              alt="code"
+            >
+              <CodeBtn>Code</CodeBtn>
+            </a>
+            <a
+              href="https://grammar-josh.netlify.app/"
+              target="_blank"
+              alt="live Project"
+            >
+              <LiveCodeBtn>Live</LiveCodeBtn>
+            </a>
+          </ProjectButton>
 
             <ProjectDescDiv>
               <ProjectTitle>GrammarBot</ProjectTitle>
@@ -139,22 +157,7 @@ export default function Projects() {
               </TechStack>
             </ProjectDescDiv>
           </SecondProject>
-          <ProjectButton>
-            <a
-              href="https://github.com/joshkwannacode/grammar-josh"
-              target="_blank"
-              alt="code"
-            >
-              <CodeBtn>Code</CodeBtn>
-            </a>
-            <a
-              href="https://grammar-josh.netlify.app/"
-              target="_blank"
-              alt="live Project"
-            >
-              <LiveCodeBtn>Live</LiveCodeBtn>
-            </a>
-          </ProjectButton>
+          
 
           <SecondProject>
             {isShown2 === true ? (
@@ -171,6 +174,24 @@ export default function Projects() {
                 alt="project 2 gif"
               />
             ) : null}
+
+          <ProjectButton>
+            <a
+              href="https://github.com/joshkwannacode/Bali-Resort"
+              target="_blank"
+              alt="code"
+            >
+              <CodeBtn>Code</CodeBtn>
+            </a>
+            <a
+              href="https://bali-resort.netlify.app/"
+              target="_blank"
+              alt="live Project"
+            >
+              <LiveCodeBtn>Live</LiveCodeBtn>
+            </a>
+          </ProjectButton>
+
             <ProjectDescDiv>
               <ProjectTitle>Bali Resort Landing Page</ProjectTitle>
               <ProjectDesc>
@@ -189,23 +210,7 @@ export default function Projects() {
               </TechStack>
             </ProjectDescDiv>
           </SecondProject>
-          <ProjectButton>
-            <a
-              href="https://github.com/joshkwannacode/Bali-Resort"
-              target="_blank"
-              alt="code"
-            >
-              <CodeBtn>Code</CodeBtn>
-            </a>
-            <a
-              href="https://bali-resort.netlify.app/"
-              target="_blank"
-              alt="live Project"
-            >
-              <LiveCodeBtn>Live</LiveCodeBtn>
-            </a>
-          </ProjectButton>
-
+          
           <a
             style={{ textDecoration: "none" }}
             href="https://github.com/joshkwannacode"
