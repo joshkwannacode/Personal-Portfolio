@@ -53,21 +53,21 @@ export default function Projects() {
         <Text>
           
         <FirstProject>
-            {isShown3 === true ? (
+            {/* {isShown3 === true ? ( */}
               <ProjectImg
                 onMouseEnter={() => setIsShown3(false)}
                 src={Skyscanner}
                 alt="skyscanner img"
               />
-            ) : null}
+            {/* ) : null} */}
 
-            {isShown3 === false ? (
+            {/* {isShown3 === false ? (
               <ProjectGif
                 onMouseLeave={() => setIsShown3(true)}
                 src={SkyscannerGif}
                 alt="skyscanner gif"
               />
-            ) : null}
+            ) : null} */}
             <ProjectButton>
             <a
               href="https://github.com/joshkwannacode/OneWay-Flights"
@@ -106,21 +106,21 @@ export default function Projects() {
           
 
           <SecondProject>
-            {isShown === true ? (
+            {/* {isShown === true ? ( */}
               <ProjectImg
                 onMouseEnter={() => setIsShown(false)}
                 src={project1}
                 alt="project 1 img"
               />
-            ) : null}
+            {/* ) : null} */}
 
-            {isShown === false ? (
+            {/* {isShown === false ? (
               <ProjectGif
                 onMouseLeave={() => setIsShown(true)}
                 src={project1Gif}
                 alt="project 1 gif"
               />
-            ) : null}
+            ) : null} */}
 
             <ProjectButton>
             <a
@@ -160,20 +160,20 @@ export default function Projects() {
           
 
           <SecondProject>
-            {isShown2 === true ? (
+            {/* {isShown2 === true ? ( */}
               <ProjectImg
                 onMouseEnter={() => setIsShown2(false)}
                 src={project2}
                 alt="project 2 img"
               />
-            ) : null}
-            {isShown2 === false ? (
+            {/*  ) : null} */}
+            {/* {isShown2 === false ? (
               <ProjectGif
                 onMouseLeave={() => setIsShown2(true)}
                 src={project2Gif}
                 alt="project 2 gif"
               />
-            ) : null}
+            ) : null} */}
 
           <ProjectButton>
             <a
